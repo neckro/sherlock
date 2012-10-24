@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
 		for (j=i+1; j < nfiles; j++) {
 			percent = compare(sig[i], sig[j]);
 			if (percent >= Thresh)
-				fprintf(Outfile, "%s and %s: %d%%\n",
+				fprintf(Outfile, "%s <and> %s <:> %d%%\n",
 					argv[i+start], argv[j+start], percent);
 		}
 
